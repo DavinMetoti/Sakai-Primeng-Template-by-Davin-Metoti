@@ -1,0 +1,160 @@
+<div class="grid">
+    <div class="lg:col-6 col-12">
+        <div class="card">
+            <div class="flex align-items-center justify-content-between mb-3">
+                <span class="text-900 text-xl font-semibold">
+                    Server Storage
+                </span>
+            </div>
+            <div class="mt-2 md:mt-0 flex align-items-center">
+                 <div class="surface-300 border-round overflow-hidden w-full" [ngStyle]="{height: '8px'}">
+                    <div class="bg-orange-500 h-full" [ngStyle]="{width: '50%'}"></div>
+                 </div>
+                    <span class="text-orange-500 ml-3 font-medium">%50</span>
+            </div>
+        </div>
+    </div>
+    <div class="lg:col-6 col-12">
+        <div class="card">
+            <div class="flex align-items-center justify-content-between mb-3">
+                <span class="text-900 text-xl font-semibold">
+                    Internal Storage
+                </span>
+            </div>
+            <div class="mt-2 md:mt-0 flex align-items-center">
+                <div class="surface-300 border-round overflow-hidden w-full" [ngStyle]="{height: '8px'}">
+                    <div class="bg-primary h-full" [ngStyle]="{width: '80%'}"></div>
+                </div>
+                <span class="text-primary ml-3 font-medium">%80</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="flex align-items-center justify-content-between mb-3">
+                <span class="text-900 text-xl font-semibold">
+                    List Folder
+                </span>
+                <div class="flex justify-content-between gap-2">
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search"></i>
+                        <input type="text" pInputText placeholder="Serach here..." style="border-radius: 20px;" />
+                    </span>
+                    <p-fileUpload mode="basic" chooseLabel="Upload file" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php"
+                        accept="image/*" maxFileSize="1000000" (onUpload)="onUpload($event)"></p-fileUpload>
+                </div>
+            </div>
+            <hr>
+            <div class="grid">
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 1</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">12</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 2</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">45</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 3</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">22</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 4</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">71</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 1</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">12</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 2</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">45</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 3</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">22</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 4</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">71</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 1</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">12</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 2</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">45</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 3</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">22</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 xl:col-3 lg:col-4 ng-star-inserted">
+                    <div class="p-3 border-1 surface-border flex align-items-center justify-content-between hover:surface-100 cursor-pointer border-round">
+                        <div class="flex align-items-center">
+                            <i class="text-2xl mr-3 pi pi-folder"></i>
+                            <span class="text-900 text-lg font-medium">Folder 4</span>
+                        </div>
+                        <span class="text-600 text-lg font-semibold">71</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
